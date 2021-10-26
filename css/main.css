@@ -1,0 +1,912 @@
+@media (max-width: 768px) {
+  .menu-bar {
+    width: 170px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 40px;
+    width: 100vw;
+  }
+  .hero .navbar h1 a {
+    font-size: .8em;
+  }
+  .hero .text-box {
+    left: 40px;
+  }
+  .hero .text-box h1 {
+    font-size: 2.5em;
+  }
+  .hero .text-box p {
+    font-size: 1.1em;
+  }
+  .hero .text-box a {
+    padding: 10px 20px;
+  }
+  .about {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+  }
+  .about .about-info {
+    padding: 15px;
+  }
+  .about .about-info p {
+    margin: 0%;
+    max-width: 800px;
+  }
+  .myskill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 150vh;
+  }
+  .myskill h1 {
+    display: block;
+    font-size: 2em;
+  }
+  .myskill .skill-img {
+    height: 60%;
+    width: 80%;
+    margin: 0;
+  }
+  .myskill .skill-img img {
+    height: auto;
+    width: 100%;
+  }
+  .myskill > div {
+    width: 80%;
+    height: 40vh;
+  }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .projects h1 {
+    position: static;
+    font-size: 2em;
+  }
+  .projects .graphic-projects div {
+    padding: 20px;
+  }
+  .project-done {
+    width: 100vw;
+    position: relative;
+    height: 110vh;
+  }
+  .project-done h1 {
+    font-size: 2em;
+  }
+  .project-done .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80vh;
+    width: 40%;
+  }
+  .project-done .box > div {
+    height: 20vh;
+  }
+  .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 180vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .price h1 {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    display: block;
+    font-size: 2em;
+  }
+  .price > div {
+    -ms-flex-preferred-size: 70vh;
+        flex-basis: 70vh;
+    width: 70%;
+    margin: 10px 0;
+  }
+  footer {
+    display: block;
+    height: 70vh;
+  }
+  footer .company {
+    display: block;
+    margin-bottom: 30px;
+  }
+  footer > div {
+    width: 70%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer > div .menu-list {
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-bar {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  z-index: 10;
+  background: white;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-bar li {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.menu-bar li:hover {
+  background: rgba(46, 0, 253, 0.239);
+}
+
+.menu-bar li > a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.menu-bar .close {
+  position: absolute;
+  height: 40px;
+  cursor: pointer;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 5px;
+}
+
+.menu-bar-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero .web-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.522);
+  z-index: -5;
+}
+
+.hero .navbar {
+  width: 100%;
+  position: absolute;
+  height: 8vh;
+  top: 5px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .navbar h1 a {
+  text-decoration: none;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.hero .navbar .menu-icon {
+  height: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  cursor: pointer;
+}
+
+.hero .text-box {
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  left: 100px;
+}
+
+.hero .text-box h1 {
+  font-size: 3em;
+  font-weight: 800;
+  max-width: 400px;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+.hero .text-box p {
+  font-size: 1.3em;
+  max-width: 500px;
+  color: #fff;
+  line-height: 1.2em;
+  margin: 20px 0;
+}
+
+.hero .text-box a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  background: #ff1515;
+  letter-spacing: 2px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: none;
+}
+
+.hero .text-box a:hover {
+  letter-spacing: 5px;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about > div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.about > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.about > div:first-child h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.about > div:first-child h1 span {
+  color: red;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.about > div:first-child p {
+  max-width: 500px;
+}
+
+.about > div:first-child p span {
+  color: red;
+}
+
+.about > div:first-child .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.3em;
+}
+
+.about > div:first-child .social a {
+  height: 30px;
+  text-decoration: none;
+}
+
+.about > div:first-child .social a img {
+  height: inherit;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.about > div:first-child .social a img:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.about > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about > div:last-child img {
+  height: 100%;
+  border-radius: 10px;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  width: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.about > div:last-child img:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+.myskill {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.myskill h1 {
+  top: 0;
+  font-size: 3em;
+  position: absolute;
+}
+
+.myskill h1 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.myskill .skill-img {
+  position: relative;
+  width: inherit;
+  height: 40vh;
+}
+
+.myskill .skill-img p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.myskill .skill-img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: .03;
+  height: inherit;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+
+.myskill > div {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+  position: relative;
+  margin: 5px;
+}
+
+.myskill > div .skill1 > div {
+  width: 95%;
+  background: rgba(0, 110, 255, 0.993);
+  border-radius: 0 20px 20px 0;
+}
+
+.myskill > div .skill2 > div {
+  width: 75%;
+  background: rgba(0, 110, 255, 0.993);
+  border-radius: 0 20px 20px 0;
+}
+
+.myskill > div .skill3 > div {
+  width: 90%;
+  background: rgba(0, 110, 255, 0.993);
+  border-radius: 0 20px 20px 0;
+}
+
+.myskill > div .skill1, .myskill > div .skill2, .myskill > div .skill3 {
+  width: 100%;
+  height: 20px;
+  background: rgba(200, 200, 200, 0.637);
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+.myskill > div .skill1 > h2, .myskill > div .skill2 > h2, .myskill > div .skill3 > h2 {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.myskill > div .skill1 > div, .myskill > div .skill2 > div, .myskill > div .skill3 > div {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.projects {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects h1 {
+  position: absolute;
+  display: inline-block;
+  margin: auto;
+  top: 0;
+  font-size: 3em;
+}
+
+.projects h1 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.projects > .video-projects, .projects .graphic-projects, .projects .web-projects {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects > .video-projects > div, .projects .graphic-projects > div, .projects .web-projects > div {
+  margin: 3px 0;
+}
+
+.projects > .video-projects > div:first-child, .projects .graphic-projects > div:first-child, .projects .web-projects > div:first-child {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects > .video-projects > div:first-child h2 span, .projects .graphic-projects > div:first-child h2 span, .projects .web-projects > div:first-child h2 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.projects > .video-projects > div:last-child, .projects .graphic-projects > div:last-child, .projects .web-projects > div:last-child {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects > .video-projects > div:last-child img, .projects > .video-projects > div:last-child video, .projects .graphic-projects > div:last-child img, .projects .graphic-projects > div:last-child video, .projects .web-projects > div:last-child img, .projects .web-projects > div:last-child video {
+  border-radius: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.522);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.522);
+}
+
+.price {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price h1 {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+}
+
+.price h1 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.price > div {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  margin: 0 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid #a0a0a0;
+  background: white;
+}
+
+.price > div > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.project-done {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+}
+
+.project-done h1 {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+}
+
+.project-done h1 span {
+  color: red;
+  text-transform: uppercase;
+}
+
+.project-done > .box {
+  height: 30vh;
+  margin: 50px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+.project-done > .box > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer > div {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  margin: 10px;
+  height: 100%;
+}
+
+footer .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-menu .menu-list label {
+  color: black;
+  font-size: 1.6em;
+}
+
+footer .footer-menu .menu-list ul {
+  list-style: none;
+}
+
+footer .footer-menu .menu-list ul li {
+  margin: 10px 0;
+}
+
+footer .footer-menu .menu-list ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .company label {
+  color: black;
+  font-size: 1.7rem;
+}
+
+footer .company ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70%;
+}
+
+footer .company ul li {
+  list-style: none;
+  color: black;
+}
+
+footer .company ul li:first-child {
+  font-size: 1.2em;
+}
+
+footer .company ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright {
+  width: 100%;
+  height: 8vh;
+  background: #f1f1f1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

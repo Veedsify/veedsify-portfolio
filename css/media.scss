@@ -1,0 +1,174 @@
+@media (max-width:768px) {
+    .menu-bar{
+        width: 170px;
+    }
+    body{
+        max-width: 768px;
+        width: 100%;
+    }
+    .hero{
+        h1{
+            font-size: 2em;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 40px;
+            width: 100vw;
+            h1 a{
+                font-size: .8em;
+            }
+        }
+        .text-box{
+            left :40px;
+            h1{
+                font-size: 2.5em;
+            }
+            p{
+                font-size:1.1em;
+            }
+            a{
+                padding: 10px 20px;
+            }
+        }
+    }  
+    
+    //about
+
+    .about{
+        display: block;
+        position: relative;
+        height: auto;
+        width: 100vw;
+        margin: 0;
+        .about-info {
+            padding: 15px;
+            
+            p{
+                margin: 0%;
+                max-width: 800px;
+            }
+        }
+    }
+    .myskill{
+        display:flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 150vh;
+        h1{
+            display: block;
+            font-size: 2em;
+        }
+        .skill-img{
+            height: 60%;
+            width: 80%;
+            margin: 0;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        > div{
+            width: 80%;
+            height: 40vh;
+        }
+    }
+
+    //projects
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        h1{
+            position: static;
+            font-size: 2em;
+        }
+        .graphic-projects{
+            div{
+                padding: 20px;
+            }
+        }
+    }
+
+    // project summary
+
+    .project-done{
+        width: 100vw;
+        position: relative;
+        height: 110vh;
+        h1{
+            font-size: 2em;
+        }
+         .box{
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            width: 40%;
+            > div{
+                height:20vh;
+            }
+        }
+    }
+
+    //pricing
+    .price{
+        display: flex;
+        flex-direction: column;
+        height: 180vh;
+        justify-content: center;
+        position: relative;
+        h1{
+            position: absolute;
+            top:0;
+            margin: 0;
+            display: block;
+            font-size: 2em;
+        }
+        > div{
+            flex-basis: 70vh;
+            width: 70%;
+            margin: 10px 0;
+        }
+    }
+    // footer section
+
+    footer{
+        display: block;
+        height: 70vh;
+        .company{
+            display: block;
+            margin-bottom: 30px;
+        }
+        > div {
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex: 1;
+            margin: auto;
+            align-items: center;
+            justify-content: flex-start;
+            .menu-list{
+                width: 100%;
+            }
+        }
+    }
+
+    // copyright
+
+    .copyright{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+}
